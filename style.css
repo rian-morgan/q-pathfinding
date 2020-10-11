@@ -1,0 +1,98 @@
+
+:root {
+    --background-color:     rgba(32, 32, 64, 1);
+    --surface-color:        rgba(84, 56, 100, 1);
+    --primary-color:        rgba(255, 99, 99, 1);
+    --secondary-color:      rgba(255, 189, 105, 1);
+    --primary-font-color:   rgba(255, 255, 255, 1);
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+html {
+   // width:100%
+}
+
+head {
+    background-color: var(--surface-color);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Roboto, serif;
+    color: var(--primary-font-color);
+}
+
+button {
+    font-family: Roboto, serif;
+}
+
+
+.header {
+    width:100%;
+    background-color: var(--surface-color);
+    margin:0 0 0 0;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.title {
+    font-size: xx-large;
+}
+
+.button-header-container {
+    font-size: medium;
+    display: flex;
+}
+
+.button-header {
+    cursor: pointer;
+    margin: 2px 5px 2px 5px;
+    padding: 2px 4px 2px 4px;
+    background-color: var(--surface-color);
+    //background-color: rgba(0,0,0,0.2);
+    border:none;
+    color: var(--primary-font-color);
+}
+
+.button-header:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.grid-container {
+    //background-color: var(--surface-color);
+    margin:20px;
+    width:400px;
+    height:400px;
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    width:20px;
+    height:20px;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.startNode {
+    background-color: greenyellow;
+}
+
+.endNode {
+    background-color: tomato;
+}
+
+.weightNode {
+    background-color: orange;
+}
+
+.wallNode {
+    background-color: grey;
+}
+
+.pathNode {
+    background-color: var(--surface-color);
+}

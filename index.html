@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <script src="main.js"></script></script>
+    <script src="websocket.js"></script></script>
+    <script src="heatMap.js"></script></script>
+    <script src="colorValues.js"></script></script>
+    <script src="shadows.js"></script></script>
+    <script src="grid.js"></script></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id='header' class='header'>
+        <div class='title'>Morasel: pathFinding</div>
+        <div class='button-header-container'>        
+            <div class='button-header' onclick="makeRows(15,15)">Make 10x10 grid</div>
+            <div class='button-header' onclick="pathFind(window.grid.nRows, window.grid.nCols)">Run Dijkstra's Algorithm</div>    
+            <div class='button-header' onclick="iterateHistory(0)">Show Shortest Paths</div>
+            <div class='button-header' onclick="resetGrid()">Clear Grid</div>
+        <div class='button-header' onclick="dbf()">Debounce</div>
+        </div>
+    </div>
+    <div id='container' class='grid-container'></div>
+</body>
